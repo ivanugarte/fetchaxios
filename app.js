@@ -44,7 +44,8 @@
     try {
       const resPost = await axios(`https://jsonplaceholder.typicode.com/posts/${idPost}`)
       const resUser = await axios(`https://jsonplaceholder.typicode.com/users/${resPost.data.userId}`)
-      console.log(resPost.data.userId);  
+      console.log('axios -----------------------------');  
+      console.log(resUser.data.name);  
     } 
     catch (error) {
       console.log(error);
